@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="Cnt.css">
+</head>
+<body>
+  <header class="box">
+    <h1>Celestial Chapters - Contact Us</h1>
+  </header>
+<br><br>
+  <main class="box">
+    <form id="contactForm" novalidate>
+      <label>
+        Name
+        <input type="text" id="name" name="name" required minlength="2" />
+      </label>
+
+      <label>
+        Email
+        <input type="email" id="email" name="email" required />
+      </label>
+
+      <label>
+        Subject
+        <input type="text" id="subject" name="subject" required minlength="2" />
+      </label>
+
+      <label>
+        Message
+        <textarea id="message" name="message" required minlength="10"></textarea>
+      </label>
+
+      <div class="form-row">
+        <button type="submit">Send</button>
+        <button type="button" id="resetBtn">Clear</button>
+      </div>
+
+      <p id="formFeedback" class="feedback" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div>© <span id="year3"></span> Celestial Chapters</div>
+  </footer>
+
+  <script>
+    document.getElementById('year3').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
