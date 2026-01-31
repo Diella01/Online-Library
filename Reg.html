@@ -10,32 +10,47 @@
     <div class="box">
         <h3>Register</h3>
 
+        <!-- Role Selection -->
+        <div class="role-selection">
+            <label>
+                <input type="radio" name="role" value="user" checked> User
+            </label>
+            <label>
+                <input type="radio" name="role" value="admin"> Administrator
+            </label>
+        </div>
+
         <label for="name">Name:</label>
-       <input type="text" id="name" placeholder="Name and surname"><br><br>
+        <input type="text" id="name" placeholder="Name and Surname">
 
         <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Email"><br><br>
+        <input type="email" id="email" placeholder="Email">
 
-       <label for="ditelindja">Birthdate:</label>
-       <textarea id="birthdate" placeholder="mm/dd/yyy"></textarea><br><br>
+        <label for="birthdate">Birthdate:</label>
+        <input type="text" id="birthdate" placeholder="MM/DD/YYYY">
 
         <label>Gender:</label>
-        <input type="radio" id="female" name="gender">
-        <label for="female">F</label>
-        <input type="radio" id="male" name="gender">
-        <label for="male">M</label><br><br>
+        <div class="gender-group">
+            <input type="radio" id="female" name="gender">
+            <label for="female">F</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">M</label>
+        </div>
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" placeholder="Phone number"><br><br>
+        <input type="tel" id="phone" placeholder="Phone Number">
 
         <label for="city">City:</label>
-        <input type="text" id="city" placeholder="City"><br><br>
+        <input type="text" id="city" placeholder="City">
 
-        <input type="checkbox" id="terms">
-        <label for="terms">I accept Terms and Conditions</label><br><br>
+        <div>
+            <input type="checkbox" id="terms">
+            <label for="terms">I accept Terms and Conditions</label>
+        </div>
 
-        <button type="button">Register</button>
+        <div class="button-center">
+            <a href="books.html" class="btn-register">Register</a>
+        </div>
     </div>
 </body>
-
 </html>
