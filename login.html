@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="box">
+        <h3>Sign In</h3>
+
+        <!-- Role Selection -->
+        <div class="role-selection">
+            <label>
+                <input type="radio" name="role" value="user" checked> User
+            </label>
+            <label>
+                <input type="radio" name="role" value="admin"> Administrator
+            </label>
+        </div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+
+        <div>
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+        </div>
+
+        <button type="button" onclick="window.location.href='books.html'">
+            Sign In
+        </button>
+
+        <p class="register-text">
+            Don’t have an account? <a href="Reg.html">Register</a>
+        </p>
+    </div>
+</body>
+</html>
