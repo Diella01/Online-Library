@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    height: 100vh;           /* full viewport height */
+}
+
+.box {
+    width: 350px;
+    padding: 30px 25px;
+    background-color: #fff0e0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: #5a3e2b;
+    text-align: left;
+}
+
+.box h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #b86b00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.box input[type="email"],
+.box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.box input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #b86b00;
+    color: beige;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.box button:hover {
+    background-color: #a15a00;
+}
+
+.register-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #b86b00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+.role-selection {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.role-selection label {
+    font-weight: normal;
+    margin-right: 10px;
+}
